@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First PortFolio</title>
+    <style>
+        .left-box {
+            width: 300px;
+            height: 100%;
+            position: fixed;
+            background: #000;
+            margin-right: 25px;
+            display: flex;
+            justify-content: center;
+            border: 1px solid black;
+        }
+
+        .profile-box {
+            width: 100%;
+            display: flex;
+            /* justify-content: center; */
+            color: white;
+            /* background: #000; */
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .right-box,
+        .contain-box1 {
+            /* float: right; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 300px;
+            flex-wrap: wrap;
+            /* border:1px solid black; */
+
+        }
+
+        .box {
+            width: 280px;
+            height: 250px;
+            border: 1px solid black;
+            margin: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            background: black;
+            color: white;
+            text-transform: capitalize;
+            position: relative;
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .imgBox {
+            width: 200px;
+            object-fit: contain;
+            background-position: center;
+            background-size: cover;
+            /* height:200px; */
+        }
+
+        .imgBox img {
+            border-radius: 100px;
+            padding: 5px;
+            background: white;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            background-position: center;
+        }
+
+        .contain-box {
+            text-align: center;
+            line-height: 30px;
+        }
+
+        .header {
+            width: 300px;
+            height: 55px;
+            background: #000;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+
+        #btn {
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 10px;
+            border: none;
+        }
+
+        .contain {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            bottom: 0;
+            left: 0;
+            background: #000;
+            opacity: 0.7;
+            flex-direction: column;
+            width: 100%;
+            transform: translateY(100%);
+            transition: all 0.5s ease-in-out;
+            text-align: center;
+        }
+
+        .box:hover .contain {
+            height: 250px;
+            transform: translateY(0);
+        }
+
+        .btn1 {
+            padding: 10px;
+            font-size: 15px;
+            font-size: 20px;
+            cursor: pointer;
+            margin: 10px 5px;
+        }
+        .btn{
+            display: flex;
+        }
+        .btn1 a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="left-box">
+            <div class="profile-box">
+                <div class="Profile">
+                    <h1>My PortFolio</h1>
+                </div>
+                <div class="imgBox">
+                    <img src="https://timesofindia.indiatimes.com/photo/96710346/96710346.jpg" alt="">
+                </div>
+                <div class="contain-box">
+                    <h1>Rohit</h1>
+                    <h1>Web Designer</h1>
+                </div>
+                <button id="btn">More..</button>
+            </div>
+        </div>
+
+        <div class="right-box">
+            <div class="header">
+                My Our projects
+            </div>
+        </div>
+        <div class="contain-box1">
+            <div class="box">
+                <img src="https://gurmeet.net/Images/puzzles/number_guessing_game_transparent.png" alt="img1">
+                <div class="contain">
+                    <h1>guessing Number </h1>
+                    <div class="status" id=type1>Data</div>
+                    <div class="btn">
+                        <button class="btn1">
+                        <a href="#">Check</a>
+                        </button>
+                        <button class="btn1">
+                        <a href="guessNum2.html" target="_blank">Visit</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsrIVxRa0XsNl9QYdBaypII07Hp2ecAaUMQWNJHDND7-CimDKEzy9VxGyBMc5vab_Zsog&usqp=CAU"
+                    alt="img1">
+                <div class="contain">
+                    <h1>Random color Match </h1>
+                    <div class="status" id=type2>Data</div>
+                    <div class="btn">
+                        <button class="btn1">
+                        <a href="#">Check</a>
+                        </button>
+                        <button class="btn1">
+                        <a href="findcolor copy.html" target="_blank">Visit</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://play-lh.googleusercontent.com/VixmJODU1y3uNgJVHXOyqfV63No1A_qi8QgSv_goqy5I8QogG-fBDPtRUk-drZ-TSYc"
+                    alt="img1">
+                <div class="contain">
+                    <h1>Card Matching</h1>
+                    <div class="status" id=type3>Data</div>
+                    <div class="btn">
+                        <button class="btn1">
+                        <a href="#">Check</a>
+                        </button>
+                        <button class="btn1">
+                        <a href="Card_matching.html" target="_blank">Visit</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://assets-global.website-files.com/61c1a8251c7c762bdbadf2a0/61c1a8251c7c763bc8ae025b_5f2044b0128f70015545e0ba_Calculator%25252520Usage.png"
+                    alt="img1">
+                <div class="contain">
+                    <h1>Calculator</h1>
+                    <div class="status" id=type4>Data</div>
+                    <div class="btn">
+                        <button class="btn1">
+                        <a href="#">Check</a>
+                        </button>
+                        <button class="btn1">
+                        <a href="calcultor.html" target="_blank">Visit</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://www.codingnepalweb.com/wp-content/uploads/2022/12/Responsive-20Profile-20Card-20Slider-20in-20HTML-20CSS-20-amp-20Swiperjs.jpg"
+                    alt="img1">
+                <div class="contain">
+                    <h1>Card slider</h1>
+                    <div class="status" id=type5>Data</div>
+                    <div class="btn">
+                        <button class="btn1">
+                        <a href="#">Check</a>
+                        </button>
+                        <button class="btn1">
+                        <a href="image_slider.html" target="_blank">Visit</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://i.redd.it/8u9m3jpd1qtz.png" alt="img1">
+                <div class="contain">
+                    <h1>Check Profile Status</h1>
+                    <div class="status" id=type6>Data</div>
+                    <div class="btn">
+                        <button class="btn1">
+                        <a href="#">Check</a>
+                        </button>
+                        <button class="btn1">
+                        <a href="card_status.html" target="_blank">Visit</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://media.cakeresume.com/image/upload/v1674639926/ulpx6wgiqajkqencaprt.png" alt="img1">
+                <div class="contain">
+                    <h1>Todo App</h1>
+                    <div class="status" id=type7>Data</div>
+                    <div class="btn">
+                        <button class="btn1">
+                        <a href="#">Check</a>
+                        </button>
+                        <button class="btn1">
+                        <a href="todoList.html" target="_blank">Visit</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
